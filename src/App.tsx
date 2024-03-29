@@ -30,12 +30,13 @@ function App() {
       title,
       completed: false
     }
+    console.log("🚀 ~ file: App.tsx:41 ~ handleAddTodo ~ lists:", lists)
 
     try {
       await mutate(addTodo(newTodo), {
         optimisticData: lists ? [...lists, newTodo] : [newTodo],
         rollbackOnError: true,
-        // populateCache: true,
+        populateCache: true,
         revalidate: false
       })
       toast.success('Successfully added the new item.')
