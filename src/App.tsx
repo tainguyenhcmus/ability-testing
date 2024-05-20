@@ -124,7 +124,7 @@ function App() {
       >
         <p className='h1 text-center mt-3 mb-4 pb-3 text-primary'>
           <i className='fas fa-check-square me-1'></i>
-          <u>My Todo-s</u>
+          <u>Ability testing</u>
         </p>
         <div
           className={`flex flex-col space-y-6 w-[600px] md:w-[100%] z-10 p-4 `}
